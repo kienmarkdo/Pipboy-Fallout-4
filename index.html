@@ -14,6 +14,7 @@
 
 <body>
     
+    <!-- main nav bar (STAT, INV, DATA, MAP, RADIO)-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,9 +38,61 @@
         </div>
     </nav>
 
+    <!-- navbar inner tabs (accessed through main navbar) -->
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#status" class="nav-link" data-toggle="tab" role="tab">
+                STATUS
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#special" class="nav-link" data-toggle="tab">
+                SPECIAL
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#perks" class="nav-link" data-toggle="tab">
+                PERKS
+            </a>
+        </li>
+    </ul>
+
+    <!-- tab content of inner tabs of main navbar -->
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="status" role="tabpanel">
+            <div class="center-image">
+                <img src="vault-boy-walking.png">
+            </div>
+        </div>
+        <div class="tab-pane" id="special" role="tabpanel">
+            SPECIAL
+        </div>
+        <div class="tab-pane" id="perks" role="tabpanel">
+            PERKS
+        </div>
+    </div>
+
+    <!-- Footer/bottom nav bar -->
+    <navbar class="navbar navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 90/90
+            </div>
+            <div class="col-6">
+                LEVEL 1
+                <div class="level-progress"></div>
+            </div>
+            <div class="col-3">
+                AP 50/50
+            </div>
+        </div>
+    </navbar>
 
 
 
+    <!-- Scripts -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
