@@ -10,6 +10,23 @@ body {
     background: #272b23;
 }
 
+body::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*background: repeating-linear-gradient(0deg, rgba(0,0,0,0.5) 5px, rgba(0,0,0,0.4), transparent 1px, transparent 2px);*/
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.4), transparent 1px, transparent 2px);
+    /* background: radial-gradient(#000 0.5px,transparent 0.5px) 0   0   /3px 3px,
+    radial-gradient(#000 0.5px,transparent 0.5px) 1px 1px /3px 3px,
+    radial-gradient(#000 0.5px,transparent 0.5px) 2px 2px /3px 3px; */
+    opacity: 0.4;
+    z-index: 1000;
+    pointer-events: none; /* allows the user to click through the scanlines screen */
+}
+
 .navbar {
     border-bottom: 2px solid;
     margin: 0px 10px;
