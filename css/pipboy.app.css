@@ -59,6 +59,11 @@ ul > li.nav-item > a.nav-link {
     color: #14fe17 !important;
 }
 
+/* inner nav bar tabs/links */
+ul > li.nav-item > a.nav-link.inner {
+    opacity: 0.5;
+}
+
 /* navigation styling: rectangle box around active nav-item in the main nav bar */
 li.nav-item.active::before {
     content: "";
@@ -104,17 +109,25 @@ li.nav-item.active::before {
 
 /* border of the inner tabs when hovering over them */
 .nav-tabs .nav-link:hover {
-    border: 1px solid #14fe17;
-    /* border-radius: 0.25rem; */
+    /* border: 1px solid #14fe17;
     border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem;
+    border-top-right-radius: .25rem; */
+    border: none;
 }
 
-/* background of the inner tabs when clicking them */
-.nav-tabs .nav-link.active {
+.navbar-nav.nav-fill {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* for inner tabs when clicking them */
+.nav-tabs .nav-link.inner.active {
     /* background-color: #5e8833; */
     /* background-color:black; */
-    background-color: #11c51473;
+    /* background-color: #11c51473; */
+    background: transparent;
+    border: none;
+    opacity: 1;
 }
 
 
@@ -163,6 +176,11 @@ li.nav-item.active::before {
 
         margin-left: 33%;
         margin-right: 33%;
+    }
+
+    .navbar-nav.nav-fill {
+        margin-left: 0;
+        margin-right: 0;
     }
     
 
