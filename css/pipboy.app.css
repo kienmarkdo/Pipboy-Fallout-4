@@ -27,12 +27,12 @@ body::after {
     pointer-events: none; /* allows the user to click through the scanlines screen */
 }
 
-.navbar {
+.navbar.navbar-light {
     border-bottom: 2px solid;
     margin: 0px 10px;
 }
 
-.navbar::before, .navbar::after {
+.navbar.navbar-light::before, .navbar.navbar-light::after {
     height: 7px;
     width: 2px;
     content: "";
@@ -146,6 +146,23 @@ li.nav-item.active::before {
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(1);
 }
 
+/* border of progress bar */
+.level-progress {
+    width: 100%;
+    height: 10px;
+    border: 2px solid;
+    display: inline-block;
+    width: 70%;
+}
+
+/* actual indicator of progress within the level */
+.level-progress-indicator {
+    position: relative;
+    height: 6px;
+    background: #14fe17;
+    width: 70%;
+}
+
 
 .pip-footer {
     position: fixed;
@@ -153,11 +170,25 @@ li.nav-item.active::before {
     bottom: 0;
     width: calc(100% - 20px);
     margin: 10px;
-
 }
 
 
-/* media query CSS */
+.navbar.navbar-light.pip-footer {
+    border: none;
+}
+
+
+.navbar.pip-footer .col-3, .navbar.pip-footer .col-6 {
+    background: rgba(20, 254, 23, 0.1);
+}
+
+.navbar.pip-footer .col-6 {
+    margin: 0px 0.5vw;
+    flex: 0 0 48%;
+}
+
+
+/* =========================== media query CSS =========================== */
 @media(max-width: 991px) {
     /* inner nav bar tabs centering when screen size is small;
     width 991px is the same dimensions as the bootstrap button
