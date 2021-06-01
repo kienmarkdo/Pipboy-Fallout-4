@@ -285,9 +285,9 @@ li.nav-item.active::before {
         margin-left: 0;
     }
 
+    /* pipboy image margin change for very small screen widths */
     @media(max-width: 330px) {
             .center-image {
-            /* all: unset; */
             margin-left: 70px;
         }
     }
