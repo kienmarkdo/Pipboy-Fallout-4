@@ -217,6 +217,17 @@ NOTE: The min-width is the same as Bootstrap and will change at the same time as
     margin-bottom: 130px;
 }
 
+.stat-numbers .col-1, .stat-numbers .col-2 {
+    background: rgba(20, 254, 23, 0.1);
+    margin-right: 4px;
+}
+
+.stat-numbers .col-1.transparent,
+.stat-numbers .col-2.transparent {
+    background: transparent;
+}
+
+
 /* START: utility classes for width percentage (mainly for the progress indicators) */
 .w10 {
     width: 10%;
