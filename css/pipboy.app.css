@@ -62,6 +62,7 @@ ul > li.nav-item > a.nav-link {
 /* inner nav bar tabs/links */
 ul > li.nav-item > a.nav-link.inner {
     opacity: 0.5;
+    font-size: 32px;
 }
 
 /* navigation styling: rectangle box around active nav-item in the main nav bar */
