@@ -2,6 +2,8 @@
 My first personal front-end web development project where I get to apply the front-end skills I learned in the past month to create something cool - such as a clone of the
 "Pipboy" from the game "Fallout 4"! This is an idea which I shamelessly borrowed from the Udemy course "The Complete Front-End Web Development Course!" by Nick Germaine.
 
+<img src="https://user-images.githubusercontent.com/67518620/120380525-47a68600-c2ef-11eb-9603-0c8dcc16f983.png" width=auto height="200">
+
 ## Purpose
 I had some free time as this is my first summer as a university student so I decided to learn some practical front-end skills. This project allowed me to put the skills I learned
 into good use. 
