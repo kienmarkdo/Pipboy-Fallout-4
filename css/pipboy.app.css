@@ -4,6 +4,7 @@
     src: url("../monofonto.ttf");
 }
 
+
 body {
     font-family: Pipboy, sans-serif;
     color: #14fe17 !important;
@@ -214,17 +215,39 @@ NOTE: The min-width is the same as Bootstrap and will change at the same time as
 }
 
 .stat-bars > .row {
-    margin-bottom: 130px;
+    margin-bottom: 110px;
 }
 
 .stat-numbers .col-1, .stat-numbers .col-2 {
     background: rgba(20, 254, 23, 0.1);
-    margin-right: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .stat-numbers .col-1.transparent,
 .stat-numbers .col-2.transparent {
     background: transparent;
+}
+
+.img-responsive {
+    width: 100%;
+    margin-top: 10px;
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+}
+
+.img-responsive.sm-img {
+    margin-top: 0px;
+}
+
+figure.icon {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    width: 20px;
+    transform: translateX(-7px);
+    margin-bottom: 2px;
 }
 
 
@@ -268,6 +291,7 @@ NOTE: The min-width is the same as Bootstrap and will change at the same time as
 
 /* =========================== media query CSS =========================== */
 @media(max-width: 991px) {
+
     /* inner nav bar tabs centering when screen size is small;
     width 991px is the same dimensions as the bootstrap button
     for the dropdown menu to replace the nav bar */
@@ -310,6 +334,8 @@ NOTE: The min-width is the same as Bootstrap and will change at the same time as
             margin-left: 70px;
         }
     }
+
+
     
 
     
