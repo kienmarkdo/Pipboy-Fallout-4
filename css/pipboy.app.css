@@ -54,9 +54,54 @@ body::after {
     right: 0px;
 }
 
+/* both main and inner nav bar tabs/links */
 ul > li.nav-item > a.nav-link {
     color: #14fe17 !important;
 }
+
+/* navigation styling: rectangle box around active nav-item in the main nav bar */
+li.nav-item.active::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    background: #272b23;
+    width: 100%;
+    height: 20px;
+    top: 20px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+}
+
+
+/* media query CSS */
+@media(max-width: 991px) {
+    /* inner nav bar tabs centering when screen size is small;
+    width 991px is the same dimensions as the bootstrap button
+    for the dropdown menu to replace the nav bar */
+        .nav-tabs {
+        justify-content: center;
+    }
+
+    /* navigation styling: rectangle box around active nav-item in the main nav bar */
+    li.nav-item.active::before {
+        content: "";
+        position: absolute;
+        background: #272b23;
+        width: 30%;
+        height: 20px;
+        top: 20px;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-top: 2px solid;
+
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+
+} /* end of media query */
+
 
 .navbar-light ul.navbar-nav > li {
     display: block;
@@ -64,13 +109,43 @@ ul > li.nav-item > a.nav-link {
     width: 100%;
 }
 
+/* main nav bar tabs/links */
 .navbar-light .navbar-nav > li.nav-item > .nav-link {
     text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
+    z-index: 50;
+    position: relative;
+    background: #272b23;
 }
 
 .navbar-nav {
     width: 100%;
 }
+
+.nav.nav-tabs {
+    margin: 20px;
+    border-bottom: none;
+}
+
+/* border of the inner tabs when hovering over them */
+.nav-tabs .nav-link:hover {
+    border: 1px solid #14fe17;
+    /* border-radius: 0.25rem; */
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+/* background of the inner tabs when clicking them */
+.nav-tabs .nav-link.active {
+    /* background-color: #5e8833; */
+    /* background-color:black; */
+    background-color: #11c51473;
+}
+
 
 .center-image img {
     margin: auto;
@@ -79,7 +154,6 @@ ul > li.nav-item > a.nav-link {
     max-height: 300px;
     margin-top: 100px;
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(1);
-
 }
 
 
