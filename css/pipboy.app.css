@@ -136,6 +136,13 @@ li.nav-item.active::before {
     opacity: 1;
 }
 
+/* pipboy image in STAT -> STATUS bar */
+.center-image {
+    position: absolute;
+    /* margin: auto;
+    width: 100%; */
+    margin-left: 100px;
+}
 
 .center-image img {
     margin: auto;
@@ -187,6 +194,57 @@ li.nav-item.active::before {
     flex: 0 0 48%;
 }
 
+.stat-bar {
+    width: 60px;
+    margin: auto;
+}
+
+#status {
+    max-width: 400px;
+    margin: auto;
+}
+
+.stat-bars > .row {
+    margin-bottom: 130px;
+}
+
+/* START: utility classes for width percentage (mainly for the progress indicators) */
+.w10 {
+    width: 10%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.w90 {
+    width: 90%;
+}
+/* END: utility classes for width percentage (mainly for the progress indicators) */
 
 /* =========================== media query CSS =========================== */
 @media(max-width: 991px) {
@@ -215,11 +273,24 @@ li.nav-item.active::before {
         margin-right: 33%;
     }
 
+    /* main nav bar container */
     .navbar-nav.nav-fill {
         margin-left: 0;
         margin-right: 0;
     }
     
+    /* inner nav bar container */
+    .nav.nav-tabs {
+        margin-left: 0;
+    }
 
+    @media(max-width: 330px) {
+            .center-image {
+            /* all: unset; */
+            margin-left: 70px;
+        }
+    }
+    
 
+    
 } /* end of media query */
