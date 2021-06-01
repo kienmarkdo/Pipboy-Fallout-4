@@ -74,35 +74,6 @@ li.nav-item.active::before {
 }
 
 
-/* media query CSS */
-@media(max-width: 991px) {
-    /* inner nav bar tabs centering when screen size is small;
-    width 991px is the same dimensions as the bootstrap button
-    for the dropdown menu to replace the nav bar */
-        .nav-tabs {
-        justify-content: center;
-    }
-
-    /* navigation styling: rectangle box around active nav-item in the main nav bar */
-    li.nav-item.active::before {
-        content: "";
-        position: absolute;
-        background: #272b23;
-        width: 30%;
-        height: 20px;
-        top: 20px;
-        border-left: 2px solid;
-        border-right: 2px solid;
-        border-top: 2px solid;
-
-        margin-left: 35%;
-        margin-right: 35%;
-    }
-
-
-} /* end of media query */
-
-
 .navbar-light ul.navbar-nav > li {
     display: block;
     position: relative;
@@ -165,3 +136,35 @@ li.nav-item.active::before {
     margin: 10px;
 
 }
+
+
+/* media query CSS */
+@media(max-width: 991px) {
+    /* inner nav bar tabs centering when screen size is small;
+    width 991px is the same dimensions as the bootstrap button
+    for the dropdown menu to replace the nav bar */
+        .nav-tabs {
+        justify-content: center;
+    }
+
+    /* navigation styling: rectangle box around active nav-item in the main nav bar */
+    li.nav-item.active::before {
+        content: "";
+        position: absolute;
+        background: transparent;
+        width: 34%;
+        height: 20px;
+        top: 10px;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-top: none;
+        z-index: 51; /* NOTE: index 51 because the css class
+        ".navbar-light .navbar-nav > li.nav-item > .nav-link" has an index of 50 */
+
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+    
+
+
+} /* end of media query */
