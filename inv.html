@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pipboy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pipboy.app.css" />
+
+</head>
+
+<body>
+
+    <!-- main nav bar (STAT, INV, DATA, MAP, RADIO)-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <!-- button for drop down menu for mobile devices -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- regular main nav bar for computer screens -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link main" href="index.html">STAT <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link main" href="inv.html">INV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main" href="#">DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MAP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main" href="#">RADIO</a>
+                </li>
+
+        </div>
+    </nav>
+
+    <!-- navbar inner tabs (accessed through main navbar) -->
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#status" class="nav-link inner active" data-toggle="tab" role="tab">
+                WEAPONS
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#special" class="nav-link inner" data-toggle="tab">
+                ARMOR
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#perks" class="nav-link inner" data-toggle="tab">
+                AID
+            </a>
+        </li>
+    </ul>
+
+    <!-- tab content of inner tabs of main navbar -->
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="status" role="tabpanel">
+            INVENTORY CONTENT
+        </div>
+        <div class="tab-pane" id="special" role="tabpanel">
+            ARMOR CONTENT
+        </div>
+        <div class="tab-pane" id="perks" role="tabpanel">
+            AID CONTENT
+        </div>
+    </div>
+
+    <!-- Footer/bottom nav bar -->
+    <navbar class="navbar navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 90/90
+            </div>
+            <div class="col-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2.5">
+                            LEVEL 1
+                        </div>
+                        <div class="col">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <span>LEVEL 1</span>
+                <div class="level-progress">
+                    <div class="level-progress-indicator"></div>
+                </div> -->
+            </div>
+            <div class="col-3 text-right">
+                AP 50/50
+            </div>
+        </div>
+    </navbar>
+
+
+
+    <!-- Scripts -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.app.js"></script>
+
+</body>
+
+</html>
