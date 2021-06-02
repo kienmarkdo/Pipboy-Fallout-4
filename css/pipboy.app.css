@@ -257,6 +257,7 @@ figure.icon {
 
 .item-list {
     padding-left: 10%;
+    padding: 0px;
     list-style: none;
     margin: 0px;
 }
@@ -274,6 +275,25 @@ figure.icon {
     background: #14fe17;
     color: #272b23;
 }
+
+.tab-pane.full {
+    height: calc(100vh - 180px);
+}
+
+.item-stats {
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    width: 200px;
+}
+
+
+.item-stats .row .col-12 {
+    background: rgba(20, 254, 23, 0.1);
+    margin-bottom: 2px;
+}
+
+
 
 
 /* START: utility classes for width percentage (mainly for the progress indicators) */

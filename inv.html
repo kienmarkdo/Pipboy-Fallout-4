@@ -47,42 +47,106 @@
     </nav>
 
     <!-- navbar inner tabs (accessed through main navbar) -->
-
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a href="#status" class="nav-link inner active" data-toggle="tab" role="tab">
-                WEAPONS
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#special" class="nav-link inner" data-toggle="tab">
-                ARMOR
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#perks" class="nav-link inner" data-toggle="tab">
-                AID
-            </a>
-        </li>
-    </ul>
-
-    <!-- tab content of inner tabs of main navbar -->
-
-    <div class="tab-content">
-        <div class="tab-pane active full" id="status" role="tabpanel">
-            <ul class="item-list">
-                <li><a href="#" class="44_pistol">.44 Pistol</a></li>
-                <li><a href="#" class="10mm_pistol">10mm Pistol</a></li>
-                <li><a href="#" class="assault_rifle">Assault Rifle</a></li>
+    <div class="container">
+        <div class="col-12">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#status" class="nav-link inner active" data-toggle="tab" role="tab">
+                        WEAPONS
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#special" class="nav-link inner" data-toggle="tab">
+                        ARMOR
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#perks" class="nav-link inner" data-toggle="tab">
+                        AID
+                    </a>
+                </li>
             </ul>
-        </div>
-        <div class="tab-pane" id="special" role="tabpanel">
-            ARMOR CONTENT
-        </div>
-        <div class="tab-pane" id="perks" role="tabpanel">
-            AID CONTENT
+
+            <!-- tab content of inner tabs of main navbar -->
+
+            <div class="tab-content">
+                <div class="tab-pane active full" id="status" role="tabpanel">
+                    <ul class="item-list">
+                        <li><a href="#" class="44_pistol">.44 Pistol</a></li>
+                        <li><a href="#" class="10mm_pistol">10mm Pistol</a></li>
+                        <li><a href="#" class="assault_rifle">Assault Rifle</a></li>
+                    </ul>
+
+                    <div class="item-stats">
+                        <div class="row-highlight">
+                            <div class="row">
+                                <div class="col-12">
+                                    Damage
+                                    <div class="damage float-right">48</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-highlight">
+                            <div class="row">
+                                <div class="col-12">
+                                    Ammo
+                                    <div class="ammo float-right">500</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-highlight">
+                            <div class="row">
+                                <div class="col-12">
+                                    Fire rate
+                                    <div class="fire_rate float-right">48</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-highlight">
+                            <div class="row">
+                                <div class="col-12">
+                                    Range
+                                    <div class="range float-right">48</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-highlight">
+                            <div class="row">
+                                <div class="col-12">
+                                    Accuracy
+                                    <div class="accuracy float-right">48</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-highlight">
+                            <div class="row">
+                                <div class="col-12">
+                                    Weight
+                                    <div class="weight float-right">48</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-highlight">
+                            <div class="row">
+                                <div class="col-12">
+                                    Value
+                                    <div class="value float-right">48</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane" id="special" role="tabpanel">
+                    ARMOR CONTENT
+                </div>
+                <div class="tab-pane" id="perks" role="tabpanel">
+                    AID CONTENT
+                </div>
+            </div>
         </div>
     </div>
+    
 
     <!-- Footer/bottom nav bar -->
     <navbar class="navbar navbar-light pip-footer">
