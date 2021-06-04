@@ -1,7 +1,5 @@
 # Pipboy-Fallout-4
-My first front-end web development project where I create a clone of the "Pipboy" from the game "Fallout 4"! 
-
-The idea is borrowed from the Udemy course "The Complete Front-End Web Development Course!" by Nick Germaine.
+My first front-end web development project where I create a clone of the "Pipboy" from the game "Fallout 4"!
 
 <img src="https://user-images.githubusercontent.com/67518620/120380525-47a68600-c2ef-11eb-9603-0c8dcc16f983.png" width=auto height="200">
 
