@@ -47,156 +47,168 @@
     </nav>
 
     <!-- navbar inner tabs (accessed through main navbar) -->
+    <div class="container">
+        <div class="col-12">
+            <ul class="nav nav-tabs" style="margin-left: 0px;">
+                <li class="nav-item">
+                    <a href="#status" class="nav-link inner active" data-toggle="tab" role="tab">
+                        STATUS
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#special" class="nav-link inner" data-toggle="tab">
+                        SPECIAL
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#perks" class="nav-link inner" data-toggle="tab">
+                        PERKS
+                    </a>
+                </li>
+            </ul>
 
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a href="#status" class="nav-link inner active" data-toggle="tab" role="tab">
-                STATUS
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#special" class="nav-link inner" data-toggle="tab">
-                SPECIAL
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#perks" class="nav-link inner" data-toggle="tab">
-                PERKS
-            </a>
-        </li>
-    </ul>
+            <!-- tab content of inner tabs of main navbar -->
 
-    <!-- tab content of inner tabs of main navbar -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="status" role="tabpanel">
+                    <div class="center-image">
+                        <img src="images/vault-boy-walking.png">
+                    </div>
 
-    <div class="tab-content">
-        <div class="tab-pane active" id="status" role="tabpanel">
-            <div class="center-image">
-                <img src="images/vault-boy-walking.png">
+                    <!-- START: container for stat bars that surround the pip boy -->
+                    <div class="stat-bars">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w30"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- start of middle row -->
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w40"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <!-- empty on purpose -->
+                            </div>
+
+                            <div class="col-3">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w10"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of middle row -->
+
+                        <!-- start of middle row -->
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w30"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <!-- empty on purpose -->
+                            </div>
+
+                            <div class="col-3">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w70"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of middle row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="stat-bar">
+                                    <div class="level-progress">
+                                        <div class="level-progress-indicator w80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: container for stat bars that surround the pip boy -->
+
+                    <!-- START: container for damage, radiation... stats -->
+                    <div class="row stat-numbers">
+                        <div class="col-2 transparent"></div>
+                        <div class="col-2">
+                            <img src="images/icon-pistol.png" class="img-responsive">
+                        </div>
+                        <div class="col-1">
+                            <!-- <div class="icon">
+                                <img src="icon-crosshairs.png" class="sm-img img-responsive"></div>
+                            <div class="points">18</div> -->
+                            <figure class="icon">
+                                <img src="images/icon-crosshairs.png" class="sm-img img-responsive"/>
+                                <figcaption style="display: block;">18</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-1 transparent">
+                            
+                        </div>
+                        <div class="col-2">
+                            <img src="images/icon-ww2-helmet.png" class="img-responsive">
+                        </div>
+                        <div class="col-1">
+                            <!-- <div class="icon">
+                                <img src="icon-energy.png" class="sm-img img-responsive"></div>
+                            <div class="points">5</div> -->
+                            <figure class="icon">
+                                <img src="images/icon-energy.png" class="sm-img img-responsive"/>
+                                <figcaption style="display: block;">5</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-1">
+                            <!-- <div class="icon">
+                                <img src="icon-radiation.png" class="sm-img img-responsive"></div>
+                            <div class="points">10</div> -->
+                            <figure class="icon">
+                                <img src="images/icon-radiation.png" class="sm-img img-responsive"/>
+                                <figcaption style="display: block;">10</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-2 transparent"></div>
+                    </div>
+                    <!-- END: container for damage, radiation... stats -->
+
+                    <!-- <div style="height: 500px;"></div> -->
+
+                </div>
+                <div class="tab-pane" id="special" role="tabpanel">
+                    <!-- SPECIAL -->
+                    <ul class="item-list">
+                        <li><a href="#" class="44_pistol">.44 Pistol</a></li>
+                        <li><a href="#" class="10mm_pistol">10mm Pistol</a></li>
+                        <li><a href="#" class="assault_rifle">Assault Rifle</a></li>
+                        
+                    </ul>
+
+
+
+                </div>
+                <div class="tab-pane" id="perks" role="tabpanel">
+                    PERKS
+                </div>
             </div>
-
-            <!-- START: container for stat bars that surround the pip boy -->
-            <div class="stat-bars">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="stat-bar">
-                            <div class="level-progress">
-                                <div class="level-progress-indicator w30"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- start of middle row -->
-                <div class="row">
-                    <div class="col-3">
-                        <div class="stat-bar">
-                            <div class="level-progress">
-                                <div class="level-progress-indicator w40"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <!-- empty on purpose -->
-                    </div>
-
-                    <div class="col-3">
-                        <div class="stat-bar">
-                            <div class="level-progress">
-                                <div class="level-progress-indicator w10"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end of middle row -->
-
-                <!-- start of middle row -->
-                <div class="row">
-                    <div class="col-3">
-                        <div class="stat-bar">
-                            <div class="level-progress">
-                                <div class="level-progress-indicator w30"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <!-- empty on purpose -->
-                    </div>
-
-                    <div class="col-3">
-                        <div class="stat-bar">
-                            <div class="level-progress">
-                                <div class="level-progress-indicator w70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end of middle row -->
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="stat-bar">
-                            <div class="level-progress">
-                                <div class="level-progress-indicator w80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END: container for stat bars that surround the pip boy -->
-
-            <!-- START: container for damage, radiation... stats -->
-            <div class="row stat-numbers">
-                <div class="col-2 transparent"></div>
-                <div class="col-2">
-                    <img src="images/icon-pistol.png" class="img-responsive">
-                </div>
-                <div class="col-1">
-                    <!-- <div class="icon">
-                        <img src="icon-crosshairs.png" class="sm-img img-responsive"></div>
-                    <div class="points">18</div> -->
-                    <figure class="icon">
-                        <img src="images/icon-crosshairs.png" class="sm-img img-responsive"/>
-                        <figcaption style="display: block;">18</figcaption>
-                    </figure>
-                </div>
-                <div class="col-1 transparent">
-                    
-                </div>
-                <div class="col-2">
-                    <img src="images/icon-ww2-helmet.png" class="img-responsive">
-                </div>
-                <div class="col-1">
-                    <!-- <div class="icon">
-                        <img src="icon-energy.png" class="sm-img img-responsive"></div>
-                    <div class="points">5</div> -->
-                    <figure class="icon">
-                        <img src="images/icon-energy.png" class="sm-img img-responsive"/>
-                        <figcaption style="display: block;">5</figcaption>
-                    </figure>
-                </div>
-                <div class="col-1">
-                    <!-- <div class="icon">
-                        <img src="icon-radiation.png" class="sm-img img-responsive"></div>
-                    <div class="points">10</div> -->
-                    <figure class="icon">
-                        <img src="images/icon-radiation.png" class="sm-img img-responsive"/>
-                        <figcaption style="display: block;">10</figcaption>
-                    </figure>
-                </div>
-                <div class="col-2 transparent"></div>
-            </div>
-            <!-- END: container for damage, radiation... stats -->
-
-            <!-- <div style="height: 500px;"></div> -->
-
-        </div>
-        <div class="tab-pane" id="special" role="tabpanel">
-            SPECIAL
-        </div>
-        <div class="tab-pane" id="perks" role="tabpanel">
-            PERKS
         </div>
     </div>
 
