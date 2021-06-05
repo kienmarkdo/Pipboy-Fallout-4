@@ -429,6 +429,13 @@ figure.icon {
         }
     }
 
+    @media(max-width: 467px) {
+        /* increase the room at the bottom (where the footer is) when the screen is too small */
+        body::after {
+            height: 130%;
+        }
+    }
+
     /* very small screen widths (iphone 10) */
     @media(max-width: 400px) {
         /* pipboy image margin change for small screen widths */
