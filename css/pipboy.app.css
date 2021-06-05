@@ -155,6 +155,21 @@ li.nav-item.active::before {
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(1);
 }
 
+.right-image img {
+    margin: auto;
+    display: block;
+    position: relative;
+    /* max-height: 238px; */
+    max-height: 300px;
+    /* margin-top: 100px; */
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(1);
+}
+
+.img-description {
+    margin-top: 100px;
+}
+
+
 /* border of progress bar */
 .level-progress {
     width: 100%;
@@ -211,6 +226,7 @@ NOTE: The min-width is the same as Bootstrap and will change at the same time as
 
 #status {
     max-width: 400px;
+    /* width: 100%; */
     margin: auto;
 }
 
@@ -272,6 +288,16 @@ figure.icon {
     padding-left: 25px;
     text-decoration: none !important;
 }
+
+/* .item-list.grid li a {
+    display: block;
+    width: 40vw;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: #14fe17;
+    padding-left: 25px;
+    text-decoration: none !important;
+} */
 
 .item-list li a:hover {
     text-decoration: none;
@@ -391,18 +417,34 @@ figure.icon {
         margin-left: 0;
     }
 
-    /* pipboy image margin change for small screen widths */
-    @media(max-width: 400px) {
-        .center-image {
-        margin-left: 80px;
+    .item-list li a {
+        max-width: 80vw;
     }
-}
 
-    /* pipboy image margin change for very small screen widths */
+    @media(max-width: 767px) {
+        .item-list li a {
+            min-width: 50vw;
+            /* margin-left: 0vw; */
+            margin-left: -30px;
+        }
+    }
+
+    /* very small screen widths (iphone 10) */
+    @media(max-width: 400px) {
+        /* pipboy image margin change for small screen widths */
+        .center-image {
+            margin-left: 80px;
+        }
+
+    }
+
+    /* very small screen widths */
     @media(max-width: 330px) {
+        /* pipboy image margin change for very small screen widths */
             .center-image {
             margin-left: 60px;
         }
+
     }
 
 
