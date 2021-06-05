@@ -289,16 +289,6 @@ figure.icon {
     text-decoration: none !important;
 }
 
-/* .item-list.grid li a {
-    display: block;
-    width: 40vw;
-    padding: 5px 10px;
-    border-radius: 2px;
-    color: #14fe17;
-    padding-left: 25px;
-    text-decoration: none !important;
-} */
-
 .item-list li a:hover {
     text-decoration: none;
     background: #14fe17;
