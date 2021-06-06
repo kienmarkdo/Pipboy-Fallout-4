@@ -417,12 +417,22 @@ figure.icon {
             /* margin-left: 0vw; */
             margin-left: -30px;
         }
+
+        body::after {
+            height: 130%;
+        }
+
+        .item-list a.active::before {
+            /* transform: translateX(-20px); */
+            margin-left: -30px;
+        }
+        
     }
 
     @media(max-width: 467px) {
         /* increase the room at the bottom (where the footer is) when the screen is too small */
         body::after {
-            height: 130%;
+            height: 140%;
         }
     }
 
@@ -431,6 +441,10 @@ figure.icon {
         /* pipboy image margin change for small screen widths */
         .center-image {
             margin-left: 80px;
+        }
+
+        body::after {
+            height: 140%;
         }
 
     }
@@ -444,8 +458,19 @@ figure.icon {
 
     }
 
+    @media(max-height: 600px) {
+        body::after {
+            height: 200%;
+        }
+    }
 
-    
+    @media(max-height: 450px) {
+        body::after {
+            height: 230%;
+        }
+    }
+
+
 
     
 } /* end of media query */
