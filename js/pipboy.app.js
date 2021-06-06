@@ -84,7 +84,7 @@ $(document).ready(function() {
         // if (valueExists(weapons, current_item)) {
         for (item in weapons) {
             if (weapons[item].name === current_item) {
-                console.log(weapons[item]);
+                // console.log(weapons[item]);
 
                 let container = $(".item-stats");
                 container.find(".damage").html(weapons[item].damage);
