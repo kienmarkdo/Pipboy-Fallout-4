@@ -32,8 +32,12 @@ $(document).ready(function() {
     ]; // end of object
 
 
-    $(".item-list a").on("click", function(e) {
-        $(".item-list a").removeClass("active");
+    /**
+     * ===========================  STAT page list items  ===========================
+     * STAT page SPECIAL and PERKS buttons
+     */
+    $(".item-list.STAT a").on("click", function(e) {
+        $(".item-list.STAT a").removeClass("active");
         $(e.currentTarget).addClass("active");
         let current_item = $(e.currentTarget).attr("class");
 
@@ -74,43 +78,37 @@ $(document).ready(function() {
 
     }); // end of $
     
-
-    $(".item-list a").on("mouseenter", function(e) {
-        let current_item = $(e.currentTarget).attr("class");
-        // console.log(current_item);
-
-        // TODO: Only run the for loop block below if current_item is in the weapons class, specifically as a value to "name"
-        // if the current_item exists in weapons as a key value (name: value) or not
-        // if (valueExists(weapons, current_item)) {
-        for (item in weapons) {
-            if (weapons[item].name === current_item) {
-                // console.log(weapons[item]);
-
-                let container = $(".item-stats");
-                container.find(".damage").html(weapons[item].damage);
-                container.find(".fire_rate").html(weapons[item].fire_rate);
-                container.find(".accuracy").html(weapons[item].accuracy);
-                container.find(".range").html(weapons[item].range);
-                container.find(".weight").html(weapons[item].weight);
-                container.find(".value").html(weapons[item].value);
-            }
-        }
-        // } // end of if
-
+    /**
+     * ===========================  INV TAB list items  ===========================
+     *
+     */
+    $(".item-list.INV a").on({
         
-    }); // end of .itemlist target
+        mouseenter: function(e) {
+            let current_item = $(e.currentTarget).attr("class");
+            // strips the word " active" from the class in order to display the stats of the active weapon
+            current_item = current_item.replaceAll(" active", "");
 
+            for (item in weapons) {
+                if (weapons[item].name === current_item) {
 
-});
-
-
-const valueExists = (obj, value) => {
-    console.log("in value exists");
-    for (let key in obj) {
-        if (obj.hasOwnProperty(key) && obj[key] === value) {
-            
-            return true;
+                    let container = $(".item-stats");
+                    container.find(".damage").html(weapons[item].damage);
+                    container.find(".fire_rate").html(weapons[item].fire_rate);
+                    container.find(".accuracy").html(weapons[item].accuracy);
+                    container.find(".range").html(weapons[item].range);
+                    container.find(".weight").html(weapons[item].weight);
+                    container.find(".value").html(weapons[item].value);
+                }
+            }
+        },
+        click: function(e) {
+            $(".item-list.INV a").removeClass("active");
+            $(e.currentTarget).addClass("active");
+            let current_item = $(e.currentTarget).attr("class");
         }
-    }
-    return false;
-}
+
+    });
+
+
+}); // end of jQuery document
