@@ -8,8 +8,12 @@ As this is my first summer as a university student, I decided to dedicate some o
 
 Also, I had joined my first hackathon, the uOttaHack 4 hackathon, at the beginning of 2021 with limited practical skills. As such, I could not contribute as much as I would have liked to. By doing a project like this, I'm positive that I will be more confident and better prepared for future hackathons.
 
-
 ## Concepts applied
 The project is built using HTML, CSS, Bootstrap and jQuery.
 Thanks to CSS flexbox and Bootstrap, the Pipboy clone is 100% compatible across all devices and screensizes.
 Version control is done entirely using git BASH.
+
+## Lessons Learned
+Gained a significantly deeper understanding of page structure, containers, grids; much more comfortable with HTML and CSS.
+Obtained a stronger grasp of the jQuery library and the Bootstrap 4 library after going through trial and error and reading the documentation on my own.
+Overall, I am much more confident with front-end development.
