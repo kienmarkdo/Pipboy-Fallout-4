@@ -14,6 +14,6 @@ Thanks to CSS flexbox and Bootstrap, the Pipboy clone is 100% compatible across 
 Version control is done entirely using git BASH.
 
 ## Lessons Learned
-Gained a significantly deeper understanding of page structure, containers, grids; much more comfortable with HTML and CSS.
-Obtained a stronger grasp of the jQuery library and the Bootstrap 4 library after going through trial and error and reading the documentation on my own.
-Overall, I am much more confident with front-end development.
+- Gained a significantly deeper understanding of page structure, containers, grids; much more comfortable with HTML and CSS.
+- Obtained a stronger grasp of the jQuery library and the Bootstrap 4 library after going through trial and error and reading the documentation on my own.
+- Overall, I am much more confident with front-end development.
